@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    .hero-section {
+      background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+    }
+
+    
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15) !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="#">
+        <i class="bi bi-bootstrap-fill me-2 fs-4"></i>
+        Bootstrap5 Website
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-1">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+          <li class="nav-item ms-2">
+            <button class="btn btn-outline-secondary btn-sm rounded-circle" id="themeToggle" style="width: 36px; height: 36px;">
+              <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <header class="hero-section text-white text-center" id="home">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <span class="badge bg-white text-primary mb-4 px-3 py-2 rounded-pill fw-semibold">
+            Version 5.3.8
+          </span>
+
+          <h1 class="display-2 fw-bold mb-4">
+            Build fast, responsive sites<br>with Bootstrap
+          </h1>
+
+          <p class="lead mb-5 text-white-50 mx-auto" style="max-width: 700px;">
+            Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+            <a href="#pricing" class="btn btn-light btn-lg px-4 fw-semibold text-primary">
+              Get Started
+            </a>
+            <a href="#" class="btn btn-outline-light btn-lg px-4">
+              Download Bootstrap 5.3.8
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+  <section id="features" class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-6">Powerful Features</h2>
+        <p class="text-muted">Designed to give you full control over your layout and functionality.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold">Dark Mode Ready</h5>
+              <p class="card-text text-muted">Built-in theme switcher using Bootstrap 5's native data-bs-theme attribute.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold">100% Mobile First</h5>
+              <p class="card-text text-muted">Fully fluid layout engineered to scale down seamlessly to mobile screens.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold">Interactive UI</h5>
+              <p class="card-text text-muted">Includes dynamic feedback toasts, sliders, and form validation logic.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="pricing" class="py-5">
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-5">Flexible Pricing</h2>
+        <p class="text-muted">Choose the plan that fits your business needs.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center align-items-stretch">
+
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 card-hover">
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="fw-semibold text-muted mb-3">Starter</h5>
+              <h1 class="fw-bold mb-4">
+                ₱0.00 <span class="fs-6 text-muted fw-normal">/mo</span>
+              </h1>
+              <ul class="list-unstyled mb-4 flex-grow-1">
+                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> 1 Project</li>
+                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Community Support</li>
+                <li class="mb-2 text-muted"><i class="bi bi-x me-2"></i> Custom Domain</li>
+              </ul>
+              <button class="btn btn-outline-primary w-100 rounded-pill py-2 fw-semibold">
+                Sign Up Free
+              </button>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border border-primary border-2 shadow rounded-4 position-relative card-hover">
+            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary px-3 py-2">
+              Most Popular
+            </span>
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="fw-semibold text-primary mb-3">Pro Developer</h5>
+              <h1 class="fw-bold mb-4">
+                ₱49.00 <span class="fs-6 text-muted fw-normal">/mo</span>
+              </h1>
+              <ul class="list-unstyled mb-4 flex-grow-1">
+                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Unlimited Projects</li>
+                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Priority Support</li>
+                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Custom Domain</li>
+              </ul>
+              <button class="btn btn-primary w-100 rounded-pill py-2 fw-semibold shadow-sm">
+                Get Started Pro
+              </button>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 card-hover">
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="fw-semibold text-muted mb-3">Enterprise</h5>
+              <h1 class="fw-bold mb-4">
+                ₱109.00 <span class="fs-6 text-muted fw-normal">/mo</span>
+              </h1>
+              <ul class="list-unstyled mb-4 flex-grow-1">
+                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Dedicated Server</li>
+                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> 24/7 Phone Support</li>
+                <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> SLA Guarantee</li>
+              </ul>
+              <button class="btn btn-outline-primary w-100 rounded-pill py-2 fw-semibold">
+                Contact Sales
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="testimonials" class="py-5" style="background-color: #e9ecef;">
+    <div class="container py-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold display-5">What People Say</h2>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 col-md-10 text-center px-4">
+                <p class="fs-5 text-secondary fst-italic mb-3">
+                  "This Bootstrap starter layout completely sped up my client workflow. Highly recommended!"
+                </p>
+                <h6 class="fw-bold mb-1">Calvin Placio, BSIT-Network Technology Track</h6>
+                <small class="text-muted">Lead Developer, Code-Smart Solutions</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 col-md-10 text-center px-4">
+                <p class="fs-5 text-secondary fst-italic mb-3">
+                  "The dark mode toggle integration works like a charm. Extremely clean markup!"
+                </p>
+                <h6 class="fw-bold mb-1">Harrold Evangelista, BSIT-Business Analytics Track</h6>
+                <small class="text-muted">UI/UX Designer</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="bg-secondary bg-opacity-50 rounded-circle d-flex align-items-center justify-content-center" 
+                style="width: 42px; height: 42px;">
+            <i class="bi bi-chevron-left text-white fs-5"></i>
+          </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="bg-secondary bg-opacity-50 rounded-circle d-flex align-items-center justify-content-center" 
+                style="width: 42px; height: 42px;">
+            <i class="bi bi-chevron-right text-white fs-5"></i>
+          </span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="contact" class="py-5 bg-white">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold display-5">Get In Touch</h2>
+            <p class="text-muted">Fill out the form below to send us a live message.</p>
+          </div>
+
+          <form id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+              </div>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required>
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">
+                  Submit Form
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="bg-light border-top py-4">
+    <div class="container text-center">
+      <div class="mb-3">
+        <a href="#" class="text-secondary mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-secondary mx-2 fs-5"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-secondary mx-2 fs-5"><i class="bi bi-github"></i></a>
+      </div>
+      <small class="text-muted">
+        &copy; 2026 SirMags. Built with Bootstrap 5.3.
+      </small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+    
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const html = document.documentElement;
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = html.getAttribute('data-bs-theme') === 'dark';
+      html.setAttribute('data-bs-theme', isDark ? 'light' : 'dark');
+      themeIcon.className = isDark ? 'bi bi-moon-stars-fill' : 'bi bi-sun-fill';
+    });
+
+    
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const firstName = document.getElementById('firstName').value;
+      const lastName  = document.getElementById('lastName').value;
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Message Sent!',
+        text: `Thank you ${firstName} ${lastName}! Your message has been received.`,
+        confirmButtonColor: '#0d6efd'
+      });
+
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
